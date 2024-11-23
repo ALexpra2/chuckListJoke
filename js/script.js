@@ -70,6 +70,7 @@ function addLocalStorage(guardarchiste) {
   console.log(localStorage);
 }
 
+//Creamos botón que nos permita eliminar todo
 function botonEliminarTodo(){
     const botonLimpiar = document.createElement('button');
     botonLimpiar.className = "limpiar";
@@ -78,6 +79,7 @@ function botonEliminarTodo(){
     
     botonLimpiar.addEventListener('click', (borrarChistes));
     
+    //Esto deja el DOM y el localStorage a 0
     function borrarChistes(){
         const chistes = document.getElementById('jokeList');
         chistes.innerHTML = '';
